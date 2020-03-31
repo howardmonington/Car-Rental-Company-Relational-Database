@@ -15,7 +15,7 @@ To better understand the constraints, I created a list of assumptions for use wi
 </ol>
 <h2> Table Creation & Logical ER Model </h2>
 After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (attached as another file in this repository). 
-![Logical ER Model](https://user-images.githubusercontent.com/42416078/78065518-a588b800-7350-11ea-9a98-13b80d8543ba.png)
+<img src="https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png" />
 <h2> The Normalization Process </h2>
 Normalization is a database design technique that organizes tables in a manner that reduces redundancy and removes potential anomalies. The 3 main types of anomalies are:
 <ol>
@@ -23,7 +23,9 @@ Normalization is a database design technique that organizes tables in a manner t
   <li> Insert Anomalies: where a table can't add a new record until it already exists </li>
   <li> Update Anomalies: where the same data is stored multiple times, and all of them don't get updated </li>
 </ol>
-For this project, I normalized 
-![image](https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png)
-
-<img src="https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png" />
+In order to take care of all functional dependency problems, I normalized to BCNF:
+First normal form (1NF): No repeating groups
+Second normal form (2NF): When an entity type is in 1NF and there are no partial functional dependencies
+Third normal form (3NF): When an entity type is in 2NF and there are no transitive dependencies
+Boyce-Codd normal form (BCNF): When an entity type is in 3NF and every determinant is a candidate key
+The fully normalized relations were:
