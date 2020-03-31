@@ -15,7 +15,7 @@ To better understand the constraints, I created a list of assumptions for use wi
 </ol>
 <h2> Table Creation & Logical ER Model </h2>
 After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (attached as another file in this repository). 
-![Logical ER Model](https://user-images.githubusercontent.com/42416078/78065518-a588b800-7350-11ea-9a98-13b80d8543ba.png)
+[Logical ER Model](https://user-images.githubusercontent.com/42416078/78065518-a588b800-7350-11ea-9a98-13b80d8543ba.png)
 <h2> The Normalization Process </h2>
 Normalization is a database design technique that organizes tables in a manner that reduces redundancy and removes potential anomalies. The 3 main types of anomalies are:
 <ol>
