@@ -24,10 +24,12 @@ Normalization is a database design technique that organizes tables in a manner t
   <li> Update Anomalies: where the same data is stored multiple times, and all of them don't get updated </li>
 </ol>
 In order to take care of all functional dependency problems, I normalized to BCNF:
-First normal form (1NF): No repeating groups
-Second normal form (2NF): When an entity type is in 1NF and there are no partial functional dependencies
-Third normal form (3NF): When an entity type is in 2NF and there are no transitive dependencies
-Boyce-Codd normal form (BCNF): When an entity type is in 3NF and every determinant is a candidate key
+<ul>
+<li> First normal form (1NF): No repeating groups </li>
+<li> Second normal form (2NF): Already in 1NF and there are no partial functional dependencies </li>
+<li> Third normal form (3NF): Already in 2NF and there are no transitive dependencies </li>
+<li> Boyce-Codd normal form (BCNF): Already in 3NF and every determinant is a candidate key </li>
+</ul>
 The fully normalized relations were:
 <img src="https://user-images.githubusercontent.com/42416078/78067163-7d4e8880-7353-11ea-988a-1a75d7b78310.png"/>
 <h2> Building Database in Oracle SQL </h2>
