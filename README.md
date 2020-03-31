@@ -44,5 +44,5 @@ Finally, it was time to build the relational database. In order to create the da
   <li> RENTALTRANSACTION</li>
 </ol>
 <h2> Final Relational Model</h2>
+<img src="https://user-images.githubusercontent.com/42416078/78074235-93624600-735f-11ea-932e-44feecc8a30b.png"/>
 
-  
