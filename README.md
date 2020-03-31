@@ -1,6 +1,6 @@
 <h1> Relational Database Development </h1>
 <h2> The Scenario </h2>
-The challenge is to develop a relational database using Oracle SQL Developer for a hypothetical car rental business with several addresses. The business rents multiple different types of cars, which each have their own respective rental prices. The rental pricing is also dependent upon available promotions. Additionally, the business keeps track of all of its customers and employees. It is also possible to be both an employee and a customer at the same time.
+The challenge was to develop a relational database using Oracle SQL Developer for a hypothetical car rental business with several addresses. The business rents multiple different types of cars, which each have their own respective rental prices. The rental pricing is also dependent upon available promotions. Additionally, the business keeps track of all of its customers and employees. It is also possible to be both an employee and a customer at the same time.
 <h2> Assumptions </h2>
 To better understand the constraints, I created a list of assumptions for use with table design. These assumptions were:
 <ol>
@@ -44,5 +44,6 @@ Finally, it was time to build the relational database. In order to create the da
   <li> RENTALTRANSACTION</li>
 </ol>
 <h2> Final Relational Model</h2>
+Below is the final fully normalized relational model. After creating the tables, I populated them with data. Some example queries and their outputs can be viewed in the "Query Commands and Outputs" document.
 <img src="https://user-images.githubusercontent.com/42416078/78074235-93624600-735f-11ea-932e-44feecc8a30b.png"/>
 
