@@ -31,5 +31,16 @@ Boyce-Codd normal form (BCNF): When an entity type is in 3NF and every determina
 The fully normalized relations were:
 <img src="https://user-images.githubusercontent.com/42416078/78067163-7d4e8880-7353-11ea-988a-1a75d7b78310.png"/>
 <h2> Building Database in Oracle SQL </h2>
-Finally, it was time to build the relational database. In order to create the database, I needed to create the tables in a specific order by first adding the tables with no foreign keys, and then creating the tables with foreign keys that refer to those new tables. In effect, I was adding the tables on the "one" side of the "one-to-many" relationship first.
+Finally, it was time to build the relational database. In order to create the database, I needed to create the tables in a specific order by first adding the tables with no foreign keys, and then creating the tables with foreign keys that refer to those new tables. That way, I would avoid building a table that refers to another table that hasn't even been created yet. In effect, I was adding the tables on the "one" side of the "one-to-many" relationship first. The full SQL for the table creation is available to view as another document in this project.
 <h3> Table Creation Order </h3>
+<ol>
+  <li> PROMOTION</li>
+  <li> STORELOCATION</li>
+  <li> CARCLASSIFICATION</li>
+  <li> CAR</li>
+  <li> PERSON</li>
+  <li> RENTALTRANSACTION</li>
+</ol>
+<h2> Final Relational Model</h2>
+
+  
