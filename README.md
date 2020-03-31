@@ -24,3 +24,6 @@ Normalization is a database design technique that organizes tables in a manner t
   <li> Update Anomalies: where the same data is stored multiple times, and all of them don't get updated </li>
 </ol>
 For this project, I normalized 
+![image](https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png)
+
+<img src="https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png" />
