@@ -14,7 +14,7 @@ To better understand the constraints, I created a list of assumptions for use wi
   <li> A car classification can only have one discount code at a time. </li>
 </ol>
 <h2> Table Creation & Logical ER Model </h2>
-After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (attached as another file in this repository). 
+After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (attached as another file in this repository). Below is an image of the logical ER Model. I was able to generate this image after fully building the database, but it made more sense to post here to illustrate how the tables would relate with each other and the cardinalities.
 <img src="https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png" />
 <h2> The Normalization Process </h2>
 Normalization is a database design technique that organizes tables in a manner that reduces redundancy and removes potential anomalies. The 3 main types of anomalies are:
@@ -29,3 +29,7 @@ Second normal form (2NF): When an entity type is in 1NF and there are no partial
 Third normal form (3NF): When an entity type is in 2NF and there are no transitive dependencies
 Boyce-Codd normal form (BCNF): When an entity type is in 3NF and every determinant is a candidate key
 The fully normalized relations were:
+<img src="https://user-images.githubusercontent.com/42416078/78067163-7d4e8880-7353-11ea-988a-1a75d7b78310.png"/>
+<h2> Building Database in Oracle SQL </h2>
+Finally, it was time to build the relational database. In order to create the database, I needed to create the tables in a specific order by first adding the tables with no foreign keys, and then creating the tables with foreign keys that refer to those new tables. In effect, I was adding the tables on the "one" side of the "one-to-many" relationship first.
+<h3> Table Creation Order </h3>
