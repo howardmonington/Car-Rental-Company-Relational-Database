@@ -16,7 +16,7 @@ To better understand the constraints, I created a list of assumptions for use wi
 <h2> Table Creation & Cardinalities </h2>
 After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (can be viewed in the "Data Dictionary.md" document). One challenge that I faced was in deciding how to address the idea that a person can be either a customer or an employee or both. In order to address this, I created the "Person" class where the attributes that were common between both customer and employee were required, and the attributes that were specific to one or the other could be blank. Then, in order to determine whether a person is a customer or employee, I would just need to write a query to see whether the employee attributes were blank or the customer attributes were blank.
 <h2> Cardinalities and Logical ER model </h2>
-Cardinalityis defined as the join betweeen two tables. Some common cardinalities include one-to-one, one-to-many, and many-to-many. Here are the cardinalities that I used to build the database:
+Cardinality is defined as the join betweeen two tables. Some common cardinalities include one-to-one, one-to-many, and many-to-many. Here are the cardinalities that I used to build the database:
 <ul>
   <li> One promotion can have one or many car classifications but a car classification can have one and only one one promotion. </li> 
   <li> A car classification can have one or many cars, but a car can have one and only one car classification. </li>
