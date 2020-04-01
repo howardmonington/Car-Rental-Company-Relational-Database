@@ -1,4 +1,4 @@
-Deliverable 10 - Query Commands
+Query Commands
  
 1.	SELECT LASTNAME, DROPOFFLOCATION
 		FROM PERSON, RENTALTRANSACTION
