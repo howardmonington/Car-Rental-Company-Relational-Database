@@ -14,7 +14,18 @@ To better understand the constraints, I created a list of assumptions for use wi
   <li> A car classification can only have one discount code at a time. </li>
 </ol>
 <h2> Table Creation & Cardinalities </h2>
-After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (can be viewed in the "Data Dictionary.md" document). Below is an image of the logical ER Model. I was able to generate this image after fully building the database, but it made more sense to post here to illustrate how the tables would relate with each other and the cardinalities.
+After diving into the details, I determined that it was necessary to create 6 tables: Car, CarClassification, Promotion, RentalTransaction, and StoreLocation. I listed the attributes that I would keep track of, and then designed a data dictionary (can be viewed in the "Data Dictionary.md" document). Cardinality is defined as the join betweeen two tables. Some common cardinalities include one-to-one, one-to-many, and many-to-many. Here are the cardinalities that I used to build the database:
+<ul>
+  <li> One promotion can have one or many car classifications but a car classification can have one and only one one promotion. </li> 
+  <li> A car classification can have one or many cars, but a car can only have one car classification. </li>
+  <li> A store location can have one or many cars but a car can have one and only one store location. </li>
+  <li> A store location can have one or many people (people class includes both employees and customers), but a person is assigned to one and only one store location. </li>
+  <li> A store location can have one or many cars but a car can only have one store location. </li> 
+  <li> A store location can also have many people (the people class includes both employees and customers), but a person can only be assigned to one store location. </li>
+  <li> A car can have many rental transactions but a rental transaction can only have one car. </li>
+  <li> A person can have many rental transactions but a rental transaction can only have one person. </li>
+</ul>
+Below is an image of the logical ER Model. I was able to generate this image after fully building the database, but it made more sense to post here to illustrate how the tables would relate with each other and the cardinalities.
 <img src="https://user-images.githubusercontent.com/42416078/78066138-a2da9280-7351-11ea-8bb9-d9914208673a.png" />
 <h2> The Normalization Process </h2>
 Normalization is a database design technique that organizes tables in a manner that reduces redundancy and removes potential anomalies. The 3 main types of anomalies are:
