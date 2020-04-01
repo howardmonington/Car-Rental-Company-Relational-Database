@@ -1,4 +1,4 @@
-Deliverable 9 - SQL for Database Structure
+SQL for Database Structure
 
 Create Table PROMOTION
 (DISCOUNTCODE VARCHAR2 (2) PRIMARY KEY,
